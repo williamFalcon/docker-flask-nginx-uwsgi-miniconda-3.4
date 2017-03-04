@@ -47,8 +47,8 @@ RUN conda create --name python3_4 python=3.4
 # Nginx, uwsgi, supervisor
 # ---------------------------
 # install python deps
-COPY app/requirements.txt /var/www/app/requirements.txt
 RUN /bin/bash -c ". activate python3_4 && pip install uwsgi"
+COPY app/requirements.txt /var/www/app/requirements.txt
 RUN /bin/bash -c ". activate python3_4 && pip install -r /var/www/app/requirements.txt"
 
 # ---------------------------
