@@ -59,8 +59,7 @@ RUN /bin/bash -c ". activate python3_4 && pip install -r /var/www/app/requiremen
 # every time we change code
 RUN chown -R www-data:www-data /var/www/app
 RUN chown -R www-data:www-data /var/log
-COPY app /var/www/app # this might need to be moved up 2 lines
-
+COPY app /var/www/app
 
 # starts supervisor given the apps in the config file
 CMD ["/usr/bin/supervisord"]
