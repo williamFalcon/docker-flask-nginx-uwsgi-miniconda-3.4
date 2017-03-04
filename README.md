@@ -7,19 +7,19 @@ You can install anything else you want on here.
 1. Clone the project.    
 ````    
 git clone https://github.com/williamFalcon/docker-flask-nginx-uwsgi-miniconda-3.4.git
-````    
+````
 2. cd to /docker-flask-nginx-uwsgi-miniconda-3.4  
 ````
 cd ./docker-flask-nginx-uwsgi-miniconda-3.4  
-````        
+````
 3. Build app    
 ````
 docker build . -t myApp
 ````    
-3. Run app    
+4. Run app    
 ````
 docker run -p 80:80 -t myApp
 ````    
-4. Open your browser to http://localhost    
+5. Open your browser to http://localhost    
     
 
